@@ -1,0 +1,4 @@
+PyGitHub
+pandas
+streamlit
+python-dotenv
