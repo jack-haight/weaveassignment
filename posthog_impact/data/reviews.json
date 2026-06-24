@@ -1,0 +1,842 @@
+[
+  {
+    "id": 4566092087,
+    "pr_number": 65925,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T21:22:07+00:00",
+    "body": "No showstoppers. The fix correctly fetches account timezone alongside currency in one call, uses `dt.replace(tzinfo=ZoneInfo(...))` (correct for naive datetimes already representing local midnight), handles DST per-chunk, and falls back gracefully on missing or invalid timezone. Tests cover PST/PDT, UTC, no-timezone, and invalid-timezone cases. Author is on the owning team.",
+    "commit_id": "7a874b55d249b10d4e9e82a4b716520fa48d5b62",
+    "html_url": "https://github.com/PostHog/posthog/pull/65925#pullrequestreview-4566092087"
+  },
+  {
+    "id": 4566109685,
+    "pr_number": 65925,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T21:25:09+00:00",
+    "body": "",
+    "commit_id": "7a874b55d249b10d4e9e82a4b716520fa48d5b62",
+    "html_url": "https://github.com/PostHog/posthog/pull/65925#pullrequestreview-4566109685"
+  },
+  {
+    "id": 4566028207,
+    "pr_number": 65924,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T21:12:12+00:00",
+    "body": "",
+    "commit_id": "1d629562ac274f9532ffc72afb92ae144b1bebaa",
+    "html_url": "https://github.com/PostHog/posthog/pull/65924#pullrequestreview-4566028207"
+  },
+  {
+    "id": 4565835589,
+    "pr_number": 65922,
+    "author": "aspicer",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:46:55+00:00",
+    "body": "",
+    "commit_id": "5bae87b838c7de50a0e305db3605afc993dd78de",
+    "html_url": "https://github.com/PostHog/posthog/pull/65922#pullrequestreview-4565835589"
+  },
+  {
+    "id": 4565824517,
+    "pr_number": 65921,
+    "author": "webjunkie",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:45:21+00:00",
+    "body": "",
+    "commit_id": "78034a6f271e618dc3d79d6fd00602f6603ceac3",
+    "html_url": "https://github.com/PostHog/posthog/pull/65921#pullrequestreview-4565824517"
+  },
+  {
+    "id": 4565887547,
+    "pr_number": 65921,
+    "author": "Piccirello",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:53:30+00:00",
+    "body": "",
+    "commit_id": "78034a6f271e618dc3d79d6fd00602f6603ceac3",
+    "html_url": "https://github.com/PostHog/posthog/pull/65921#pullrequestreview-4565887547"
+  },
+  {
+    "id": 4565898126,
+    "pr_number": 65921,
+    "author": "feliperalmeida",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:54:45+00:00",
+    "body": "",
+    "commit_id": "78034a6f271e618dc3d79d6fd00602f6603ceac3",
+    "html_url": "https://github.com/PostHog/posthog/pull/65921#pullrequestreview-4565898126"
+  },
+  {
+    "id": 4565784102,
+    "pr_number": 65920,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:39:45+00:00",
+    "body": "Small, targeted fix that passes the query's date range as a HogQL filter to both execute_hogql_query calls, ensuring precise timestamp bounds are applied instead of relying solely on day-level partitioning. No showstoppers.",
+    "commit_id": "3e3cefeb923ab59731e62b41b85802ff996cafa9",
+    "html_url": "https://github.com/PostHog/posthog/pull/65920#pullrequestreview-4565784102"
+  },
+  {
+    "id": 4565724744,
+    "pr_number": 65919,
+    "author": "brandonleung",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:31:17+00:00",
+    "body": "",
+    "commit_id": "c1ccfa587bf53b927abf66056bc715572252ca13",
+    "html_url": "https://github.com/PostHog/posthog/pull/65919#pullrequestreview-4565724744"
+  },
+  {
+    "id": 4565763702,
+    "pr_number": 65918,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:36:51+00:00",
+    "body": "",
+    "commit_id": "00b345caa85dcfa5673eb16ef70ea0b4ca5b2bb5",
+    "html_url": "https://github.com/PostHog/posthog/pull/65918#pullrequestreview-4565763702"
+  },
+  {
+    "id": 4565864294,
+    "pr_number": 65918,
+    "author": "veria-ai[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:50:45+00:00",
+    "body": "",
+    "commit_id": "00b345caa85dcfa5673eb16ef70ea0b4ca5b2bb5",
+    "html_url": "https://github.com/PostHog/posthog/pull/65918#pullrequestreview-4565864294"
+  },
+  {
+    "id": 4565912948,
+    "pr_number": 65918,
+    "author": "hex-security-app[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:56:30+00:00",
+    "body": "",
+    "commit_id": "b7d4065ef13b7480619a7b70a7b1a82403becd85",
+    "html_url": "https://github.com/PostHog/posthog/pull/65918#pullrequestreview-4565912948"
+  },
+  {
+    "id": 4566012789,
+    "pr_number": 65918,
+    "author": "veria-ai[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T21:09:52+00:00",
+    "body": "",
+    "commit_id": "b7d4065ef13b7480619a7b70a7b1a82403becd85",
+    "html_url": "https://github.com/PostHog/posthog/pull/65918#pullrequestreview-4566012789"
+  },
+  {
+    "id": 4565717389,
+    "pr_number": 65918,
+    "author": "graphite-app[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T21:29:06+00:00",
+    "body": "",
+    "commit_id": "256eb66574f80e257b0e03a86353890b85011f83",
+    "html_url": "https://github.com/PostHog/posthog/pull/65918#pullrequestreview-4565717389"
+  },
+  {
+    "id": 4565703253,
+    "pr_number": 65917,
+    "author": "andrewm4894",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:28:22+00:00",
+    "body": "",
+    "commit_id": "8c89923e4f1d3f1d21245303d4ba510b87dd8e23",
+    "html_url": "https://github.com/PostHog/posthog/pull/65917#pullrequestreview-4565703253"
+  },
+  {
+    "id": 4565826899,
+    "pr_number": 65915,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:45:39+00:00",
+    "body": "Documentation-only fix to a skill guide file, correcting a HogQL query pattern and an inaccurate gotcha note. No production code touched.",
+    "commit_id": "32819222e8fd77f16d3cc5c834fa0359194c3020",
+    "html_url": "https://github.com/PostHog/posthog/pull/65915#pullrequestreview-4565826899"
+  },
+  {
+    "id": 4565618053,
+    "pr_number": 65914,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:18:08+00:00",
+    "body": "",
+    "commit_id": "371d6e6d47709d5ea333b0e44d8f9f3e38a828c8",
+    "html_url": "https://github.com/PostHog/posthog/pull/65914#pullrequestreview-4565618053"
+  },
+  {
+    "id": 4565809282,
+    "pr_number": 65914,
+    "author": "rnegron",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:43:12+00:00",
+    "body": "",
+    "commit_id": "371d6e6d47709d5ea333b0e44d8f9f3e38a828c8",
+    "html_url": "https://github.com/PostHog/posthog/pull/65914#pullrequestreview-4565809282"
+  },
+  {
+    "id": 4565936224,
+    "pr_number": 65914,
+    "author": "stamphog[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:59:26+00:00",
+    "body": "Gates denied because the change touches CI/agent infrastructure files (.agents/skills/, .claude/commands/). Additionally, the author is not on the owning team (@PostHog/team-devex), and an unresolved bot comment flagged that the PR removed test-philosophy guidance beyond its stated scope — needs a team member to confirm the removals are intentional.",
+    "commit_id": "877a18676b18d331629c55eabdbe477d821fddc9",
+    "html_url": "https://github.com/PostHog/posthog/pull/65914#pullrequestreview-4565936224"
+  },
+  {
+    "id": 4565707290,
+    "pr_number": 65913,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:28:54+00:00",
+    "body": "Simple UI cleanup removing a duplicate date control that redundantly offered the same options as the existing LemonSelect. No behavioral changes, no API or data model impact.",
+    "commit_id": "c41889b6b2a96965876107b4338e34e05726385c",
+    "html_url": "https://github.com/PostHog/posthog/pull/65913#pullrequestreview-4565707290"
+  },
+  {
+    "id": 4565558795,
+    "pr_number": 65912,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:10:42+00:00",
+    "body": "",
+    "commit_id": "f7f447cf04b66297abf78d878bf95ac6da7701b1",
+    "html_url": "https://github.com/PostHog/posthog/pull/65912#pullrequestreview-4565558795"
+  },
+  {
+    "id": 4565551810,
+    "pr_number": 65911,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:09:47+00:00",
+    "body": "",
+    "commit_id": "2601834b2e65dac3ac5bb66bac61ebfc16a71730",
+    "html_url": "https://github.com/PostHog/posthog/pull/65911#pullrequestreview-4565551810"
+  },
+  {
+    "id": 4565514692,
+    "pr_number": 65910,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:04:03+00:00",
+    "body": "Trivial bug fix — seeds the Quill DatePicker's `showTime` prop from the actual `includeTime` state rather than an unrelated granularity check. A matching test assertion was added. No showstoppers.",
+    "commit_id": "1cfed466fe0f9c26675c28f108009b966ea2cf99",
+    "html_url": "https://github.com/PostHog/posthog/pull/65910#pullrequestreview-4565514692"
+  },
+  {
+    "id": 4565523357,
+    "pr_number": 65909,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:05:34+00:00",
+    "body": "",
+    "commit_id": "b2e4f1cd1640cc6268bed62cf35b721f127b60b7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65909#pullrequestreview-4565523357"
+  },
+  {
+    "id": 4565644603,
+    "pr_number": 65909,
+    "author": "eli-r-ph",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:21:11+00:00",
+    "body": "",
+    "commit_id": "b2e4f1cd1640cc6268bed62cf35b721f127b60b7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65909#pullrequestreview-4565644603"
+  },
+  {
+    "id": 4565650287,
+    "pr_number": 65909,
+    "author": "eli-r-ph",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:21:57+00:00",
+    "body": "",
+    "commit_id": "b2e4f1cd1640cc6268bed62cf35b721f127b60b7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65909#pullrequestreview-4565650287"
+  },
+  {
+    "id": 4565478991,
+    "pr_number": 65908,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:59:18+00:00",
+    "body": "",
+    "commit_id": "afb338590889bf554165ffcf13af5f777b91e89b",
+    "html_url": "https://github.com/PostHog/posthog/pull/65908#pullrequestreview-4565478991"
+  },
+  {
+    "id": 4565414433,
+    "pr_number": 65907,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T19:51:02+00:00",
+    "body": "Simple additive UI change — adds an optional `description` field to the type and shows it in a tooltip on hover. No showstoppers, author is on the owning team.",
+    "commit_id": "dca618a81b918d6855c6792fb4fae6603ca91605",
+    "html_url": "https://github.com/PostHog/posthog/pull/65907#pullrequestreview-4565414433"
+  },
+  {
+    "id": 4565429993,
+    "pr_number": 65906,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:52:49+00:00",
+    "body": "",
+    "commit_id": "a758f6e873aa2095585ac049ee1fe583d81928b9",
+    "html_url": "https://github.com/PostHog/posthog/pull/65906#pullrequestreview-4565429993"
+  },
+  {
+    "id": 4565423145,
+    "pr_number": 65905,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:52:03+00:00",
+    "body": "",
+    "commit_id": "06966001bee09e2fcee50fa05043d381e60e5469",
+    "html_url": "https://github.com/PostHog/posthog/pull/65905#pullrequestreview-4565423145"
+  },
+  {
+    "id": 4565380056,
+    "pr_number": 65904,
+    "author": "copilot-pull-request-reviewer[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:46:15+00:00",
+    "body": "## Pull request overview\n\nThis PR clarifies that wildcard groups (`pathGroupings`) in Paths (including exclusions) are a paid “Advanced paths” feature, across the UI and the AI/MCP guidance surfaces, so free-plan users get an explicit upgrade explanation instead of a generic empty/disabled state.\n\n**Changes:**\n- Update Paths exclusions tooltip copy to mention wildcard groups require a paid plan.\n- Add a paid-plan-specific hover tooltip for the gated empty “Wildcards” taxonomic category, plus a small helper + Jest coverage.\n- Teach PostHog AI tool prompt and MCP/skill references that `pathGroupings` (wildcard groups) are paid-only and should not prompt workarounds for free users.\n\n### Reviewed changes\n\nCopilot reviewed 6 out of 6 changed files in this pull request and generated 1 comment.\n\n<details>\n<summary>Show a summary per file</summary>\n\n| File | Description |\r\n| ---- | ----------- |\r\n| services/mcp/definitions/prompts/query-paths.md | Adds paid-plan note for `pathGroupings` in the MCP Paths prompt and reminders. |\r\n| products/posthog_ai/skills/querying-posthog-data/references/example-paths.md.j2 | Adds paid-plan guidance note for wildcard groups in the querying skill reference. |\r\n| frontend/src/queries/nodes/InsightViz/EditorFilters.tsx | Updates exclusions tooltip wording to mention wildcard groups require a paid plan. |\r\n| frontend/src/lib/components/TaxonomicFilter/InfiniteSelectResults.tsx | Adds paygate-specific disabled reason and Tooltip behavior for gated Wildcards category. |\r\n| frontend/src/lib/components/TaxonomicFilter/InfiniteSelectResults.test.tsx | Adds parameterized unit tests for the new disabled-reason helper. |\r\n| ee/hogai/tools/create_insight.py | Updates the tool prompt to avoid pretending Paths edits are supported and to explain the paid gate for wildcard groups. |\n</details>\n\n\n\n\n\n\n\n---\n\n💡 <a href=\"/PostHog/posthog/new/master?filename=.github/instructions/*.instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add Copilot custom instructions</a> for smarter, more guided reviews. <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn how to get started</a>.",
+    "commit_id": "761564cf41538d3059500d0b573e26fd83719ac9",
+    "html_url": "https://github.com/PostHog/posthog/pull/65904#pullrequestreview-4565380056"
+  },
+  {
+    "id": 4565422462,
+    "pr_number": 65904,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:51:59+00:00",
+    "body": "",
+    "commit_id": "5462f51ff86c055d3ed2c68766f3cfd7ea241481",
+    "html_url": "https://github.com/PostHog/posthog/pull/65904#pullrequestreview-4565422462"
+  },
+  {
+    "id": 4565505372,
+    "pr_number": 65904,
+    "author": "slshults",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:02:31+00:00",
+    "body": "",
+    "commit_id": "5462f51ff86c055d3ed2c68766f3cfd7ea241481",
+    "html_url": "https://github.com/PostHog/posthog/pull/65904#pullrequestreview-4565505372"
+  },
+  {
+    "id": 4565395294,
+    "pr_number": 65903,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:48:42+00:00",
+    "body": "",
+    "commit_id": "c7e9def107e42a83481b52766ea27f84f369b1f5",
+    "html_url": "https://github.com/PostHog/posthog/pull/65903#pullrequestreview-4565395294"
+  },
+  {
+    "id": 4565341562,
+    "pr_number": 65901,
+    "author": "webjunkie",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T19:40:00+00:00",
+    "body": "",
+    "commit_id": "acf30429bec9e8f74c4174c6858f94c385bb9258",
+    "html_url": "https://github.com/PostHog/posthog/pull/65901#pullrequestreview-4565341562"
+  },
+  {
+    "id": 4565250008,
+    "pr_number": 65897,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:24:11+00:00",
+    "body": "",
+    "commit_id": "1564f49f49527c56e63d3e59f8b1f94b34022fe3",
+    "html_url": "https://github.com/PostHog/posthog/pull/65897#pullrequestreview-4565250008"
+  },
+  {
+    "id": 4565248464,
+    "pr_number": 65896,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:23:56+00:00",
+    "body": "",
+    "commit_id": "572b1ffcc0e314b368936a837a13f1c6f9fd2924",
+    "html_url": "https://github.com/PostHog/posthog/pull/65896#pullrequestreview-4565248464"
+  },
+  {
+    "id": 4565204937,
+    "pr_number": 65895,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:17:03+00:00",
+    "body": "",
+    "commit_id": "4e94e098643aa1a79eee9b2813defe8a0b598757",
+    "html_url": "https://github.com/PostHog/posthog/pull/65895#pullrequestreview-4565204937"
+  },
+  {
+    "id": 4565418235,
+    "pr_number": 65895,
+    "author": "z0br0wn",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:51:28+00:00",
+    "body": "",
+    "commit_id": "75d2294a60ad0622cae6df9d56f730efe26caa9d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65895#pullrequestreview-4565418235"
+  },
+  {
+    "id": 4565423056,
+    "pr_number": 65895,
+    "author": "z0br0wn",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:52:00+00:00",
+    "body": "",
+    "commit_id": "75d2294a60ad0622cae6df9d56f730efe26caa9d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65895#pullrequestreview-4565423056"
+  },
+  {
+    "id": 4565447613,
+    "pr_number": 65895,
+    "author": "z0br0wn",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:54:50+00:00",
+    "body": "",
+    "commit_id": "75d2294a60ad0622cae6df9d56f730efe26caa9d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65895#pullrequestreview-4565447613"
+  },
+  {
+    "id": 4565453002,
+    "pr_number": 65895,
+    "author": "z0br0wn",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:55:36+00:00",
+    "body": "",
+    "commit_id": "75d2294a60ad0622cae6df9d56f730efe26caa9d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65895#pullrequestreview-4565453002"
+  },
+  {
+    "id": 4565475743,
+    "pr_number": 65895,
+    "author": "z0br0wn",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T19:58:45+00:00",
+    "body": "just some nits, not blocking",
+    "commit_id": "75d2294a60ad0622cae6df9d56f730efe26caa9d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65895#pullrequestreview-4565475743"
+  },
+  {
+    "id": 4565201994,
+    "pr_number": 65894,
+    "author": "graphite-app[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:16:37+00:00",
+    "body": "",
+    "commit_id": "9b8ec2d215b6e84b902e60831a638ae88157465d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65894#pullrequestreview-4565201994"
+  },
+  {
+    "id": 4565208092,
+    "pr_number": 65894,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:17:33+00:00",
+    "body": "",
+    "commit_id": "9b8ec2d215b6e84b902e60831a638ae88157465d",
+    "html_url": "https://github.com/PostHog/posthog/pull/65894#pullrequestreview-4565208092"
+  },
+  {
+    "id": 4565411992,
+    "pr_number": 65894,
+    "author": "k11kirky",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T19:50:43+00:00",
+    "body": "worth fixing the graphite call out?",
+    "commit_id": "bb427a887dca26c12c31c19e8ac62851e2ad72f1",
+    "html_url": "https://github.com/PostHog/posthog/pull/65894#pullrequestreview-4565411992"
+  },
+  {
+    "id": 4565429937,
+    "pr_number": 65894,
+    "author": "veria-ai[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:52:41+00:00",
+    "body": "",
+    "commit_id": "bb427a887dca26c12c31c19e8ac62851e2ad72f1",
+    "html_url": "https://github.com/PostHog/posthog/pull/65894#pullrequestreview-4565429937"
+  },
+  {
+    "id": 4565531289,
+    "pr_number": 65894,
+    "author": "hex-security-app[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:06:45+00:00",
+    "body": "",
+    "commit_id": "6013d0d81af61024fa0ff354ff97de0061890c30",
+    "html_url": "https://github.com/PostHog/posthog/pull/65894#pullrequestreview-4565531289"
+  },
+  {
+    "id": 4565165321,
+    "pr_number": 65893,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:11:00+00:00",
+    "body": "",
+    "commit_id": "5f1da9239b32aa264777028edb4e580738a076a1",
+    "html_url": "https://github.com/PostHog/posthog/pull/65893#pullrequestreview-4565165321"
+  },
+  {
+    "id": 4565018163,
+    "pr_number": 65891,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:51:00+00:00",
+    "body": "",
+    "commit_id": "6948f72af038969e9470b014e8e1798d2f47e9a2",
+    "html_url": "https://github.com/PostHog/posthog/pull/65891#pullrequestreview-4565018163"
+  },
+  {
+    "id": 4565089496,
+    "pr_number": 65891,
+    "author": "veria-ai[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:01:17+00:00",
+    "body": "",
+    "commit_id": "6948f72af038969e9470b014e8e1798d2f47e9a2",
+    "html_url": "https://github.com/PostHog/posthog/pull/65891#pullrequestreview-4565089496"
+  },
+  {
+    "id": 4564994324,
+    "pr_number": 65890,
+    "author": "cat-ph",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:47:27+00:00",
+    "body": "💙 ",
+    "commit_id": "59c5a22ca158e6a07a2a1dbbca3aba4bf28f97d8",
+    "html_url": "https://github.com/PostHog/posthog/pull/65890#pullrequestreview-4564994324"
+  },
+  {
+    "id": 4564991347,
+    "pr_number": 65889,
+    "author": "bill-ph",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:47:00+00:00",
+    "body": "",
+    "commit_id": "b55e929277bb15cba2d3030b0edfe912fc225b70",
+    "html_url": "https://github.com/PostHog/posthog/pull/65889#pullrequestreview-4564991347"
+  },
+  {
+    "id": 4564933790,
+    "pr_number": 65888,
+    "author": "lucasheriques",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:37:13+00:00",
+    "body": "",
+    "commit_id": "21b7e4634b12ad590bbf7d647c1842c1ae4d3cda",
+    "html_url": "https://github.com/PostHog/posthog/pull/65888#pullrequestreview-4564933790"
+  },
+  {
+    "id": 4564931866,
+    "pr_number": 65887,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:36:58+00:00",
+    "body": "",
+    "commit_id": "d314340b117c885d9c6ce84e5ac7154aa8f54823",
+    "html_url": "https://github.com/PostHog/posthog/pull/65887#pullrequestreview-4564931866"
+  },
+  {
+    "id": 4564927935,
+    "pr_number": 65886,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:36:17+00:00",
+    "body": "",
+    "commit_id": "e153e5a26970fc53288bbd791f5da9291b21be5e",
+    "html_url": "https://github.com/PostHog/posthog/pull/65886#pullrequestreview-4564927935"
+  },
+  {
+    "id": 4564967650,
+    "pr_number": 65886,
+    "author": "veria-ai[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:43:04+00:00",
+    "body": "",
+    "commit_id": "e153e5a26970fc53288bbd791f5da9291b21be5e",
+    "html_url": "https://github.com/PostHog/posthog/pull/65886#pullrequestreview-4564967650"
+  },
+  {
+    "id": 4565019045,
+    "pr_number": 65885,
+    "author": "copilot-pull-request-reviewer[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:51:04+00:00",
+    "body": "## Pull request overview\n\nUpdates the `hideMatchOptions` JSDoc in the feature flag release conditions UI to reflect v2 targeting/bucketing terminology.\n\n**Changes:**\n- Updated the inline JSDoc for `hideMatchOptions` in `FeatureFlagReleaseConditionsCollapsible.tsx`.\n\n\n\n\n\n\n---\n\n💡 <a href=\"/PostHog/posthog/new/master?filename=.github/instructions/*.instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add Copilot custom instructions</a> for smarter, more guided reviews. <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn how to get started</a>.",
+    "commit_id": "fe8fd961224917c8fe38d3befe85750000ffe3a9",
+    "html_url": "https://github.com/PostHog/posthog/pull/65885#pullrequestreview-4565019045"
+  },
+  {
+    "id": 4564792102,
+    "pr_number": 65884,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:13:24+00:00",
+    "body": "",
+    "commit_id": "5ece6ca03864ed3f3fd1ee5a58d78481b7122fdd",
+    "html_url": "https://github.com/PostHog/posthog/pull/65884#pullrequestreview-4564792102"
+  },
+  {
+    "id": 4565092465,
+    "pr_number": 65884,
+    "author": "willwearing",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:01:43+00:00",
+    "body": "",
+    "commit_id": "b866ec436b68cb27df0d9cb929afacf30603d030",
+    "html_url": "https://github.com/PostHog/posthog/pull/65884#pullrequestreview-4565092465"
+  },
+  {
+    "id": 4565255218,
+    "pr_number": 65884,
+    "author": "willwearing",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:25:07+00:00",
+    "body": "",
+    "commit_id": "038fcd619f3f028835e21ee5494c23fc256659f2",
+    "html_url": "https://github.com/PostHog/posthog/pull/65884#pullrequestreview-4565255218"
+  },
+  {
+    "id": 4565255487,
+    "pr_number": 65884,
+    "author": "willwearing",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:25:10+00:00",
+    "body": "",
+    "commit_id": "038fcd619f3f028835e21ee5494c23fc256659f2",
+    "html_url": "https://github.com/PostHog/posthog/pull/65884#pullrequestreview-4565255487"
+  },
+  {
+    "id": 4565738047,
+    "pr_number": 65884,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T20:33:04+00:00",
+    "body": "",
+    "commit_id": "868d3421966a8b499cc09e650d3fb7ed5da93df0",
+    "html_url": "https://github.com/PostHog/posthog/pull/65884#pullrequestreview-4565738047"
+  },
+  {
+    "id": 4564737061,
+    "pr_number": 65882,
+    "author": "github-actions[bot]",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:05:05+00:00",
+    "body": "Well-targeted bug fix for a silent label-dropout in the identity matching DAG. Splitting anchor and eval edge queries prevents high-volume anchor edges from consuming the LIMIT budget and silently dropping post-window merge labels. The `order` parameter in the SQL template is a trusted internal literal, not user input. New config fields default safely, and the test directly exercises the truncation scenario.",
+    "commit_id": "7c030090c27694f3269a71c4a93c695cce89182f",
+    "html_url": "https://github.com/PostHog/posthog/pull/65882#pullrequestreview-4564737061"
+  },
+  {
+    "id": 4564739174,
+    "pr_number": 65882,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:05:20+00:00",
+    "body": "",
+    "commit_id": "7c030090c27694f3269a71c4a93c695cce89182f",
+    "html_url": "https://github.com/PostHog/posthog/pull/65882#pullrequestreview-4564739174"
+  },
+  {
+    "id": 4564740727,
+    "pr_number": 65882,
+    "author": "rafaeelaudibert",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:05:29+00:00",
+    "body": "",
+    "commit_id": "7c030090c27694f3269a71c4a93c695cce89182f",
+    "html_url": "https://github.com/PostHog/posthog/pull/65882#pullrequestreview-4564740727"
+  },
+  {
+    "id": 4564674574,
+    "pr_number": 65881,
+    "author": "gustavohstrassburger",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T17:57:03+00:00",
+    "body": "",
+    "commit_id": "bff1bc5d644d2a1ed61e2f6f35eb0699fa4c17ea",
+    "html_url": "https://github.com/PostHog/posthog/pull/65881#pullrequestreview-4564674574"
+  },
+  {
+    "id": 4564617621,
+    "pr_number": 65880,
+    "author": "stamphog[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:48:42+00:00",
+    "body": "T1d-complex feature with zero reviews and no CODEOWNERS match, touching two product areas and making a silent behavioral change to the default notebook ordering (from `-last_modified_at` to `-created_at`). This needs at least one human review before auto-approval.",
+    "commit_id": "7bf77b7299b4b3ff57c870dc9af22e6974b06cdf",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4564617621"
+  },
+  {
+    "id": 4564625892,
+    "pr_number": 65880,
+    "author": "graphite-app[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:49:49+00:00",
+    "body": "",
+    "commit_id": "7bf77b7299b4b3ff57c870dc9af22e6974b06cdf",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4564625892"
+  },
+  {
+    "id": 4564651221,
+    "pr_number": 65880,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:53:16+00:00",
+    "body": "",
+    "commit_id": "7bf77b7299b4b3ff57c870dc9af22e6974b06cdf",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4564651221"
+  },
+  {
+    "id": 4565153530,
+    "pr_number": 65880,
+    "author": "arthurdedeus",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:09:32+00:00",
+    "body": "",
+    "commit_id": "68e92c9719f1897fb53e2663ffce94ae61e4f72c",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4565153530"
+  },
+  {
+    "id": 4565153753,
+    "pr_number": 65880,
+    "author": "arthurdedeus",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T19:09:33+00:00",
+    "body": "",
+    "commit_id": "68e92c9719f1897fb53e2663ffce94ae61e4f72c",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4565153753"
+  },
+  {
+    "id": 4565804295,
+    "pr_number": 65880,
+    "author": "jabahamondes",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:42:28+00:00",
+    "body": "LGTM 🚢 ",
+    "commit_id": "68e92c9719f1897fb53e2663ffce94ae61e4f72c",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4565804295"
+  },
+  {
+    "id": 4565809498,
+    "pr_number": 65880,
+    "author": "jordanm-posthog",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T20:43:14+00:00",
+    "body": "",
+    "commit_id": "68e92c9719f1897fb53e2663ffce94ae61e4f72c",
+    "html_url": "https://github.com/PostHog/posthog/pull/65880#pullrequestreview-4565809498"
+  },
+  {
+    "id": 4564603164,
+    "pr_number": 65879,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:46:25+00:00",
+    "body": "",
+    "commit_id": null,
+    "html_url": "https://github.com/PostHog/posthog/pull/65879#pullrequestreview-4564603164"
+  },
+  {
+    "id": 4564748839,
+    "pr_number": 65879,
+    "author": "rafaeelaudibert",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:06:18+00:00",
+    "body": "",
+    "commit_id": "cb9543a51d11a3b1b83772a3f963170740b12b80",
+    "html_url": "https://github.com/PostHog/posthog/pull/65879#pullrequestreview-4564748839"
+  },
+  {
+    "id": 4564561704,
+    "pr_number": 65878,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:40:35+00:00",
+    "body": "",
+    "commit_id": "98f8eccab962a547b5762f241a65edb350419fd7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65878#pullrequestreview-4564561704"
+  },
+  {
+    "id": 4564673584,
+    "pr_number": 65878,
+    "author": "cat-ph",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:56:53+00:00",
+    "body": "",
+    "commit_id": "98f8eccab962a547b5762f241a65edb350419fd7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65878#pullrequestreview-4564673584"
+  },
+  {
+    "id": 4564678706,
+    "pr_number": 65878,
+    "author": "greptile-apps[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T17:57:41+00:00",
+    "body": "",
+    "commit_id": "98f8eccab962a547b5762f241a65edb350419fd7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65878#pullrequestreview-4564678706"
+  },
+  {
+    "id": 4564811979,
+    "pr_number": 65878,
+    "author": "chatgpt-codex-connector[bot]",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:16:34+00:00",
+    "body": "\n### 💡 Codex Review\n\nHere are some automated review suggestions for this pull request.\n\n**Reviewed commit:** `98f8eccab9`\n    \n\n<details> <summary>ℹ️ About Codex in GitHub</summary>\n<br/>\n\n[Your team has set up Codex to review pull requests in this repo](https://chatgpt.com/codex/cloud/settings/general). Reviews are triggered when you\n- Open a pull request for review\n- Mark a draft as ready\n- Comment \"@codex review\".\n\nIf Codex has suggestions, it will comment; otherwise it will react with 👍.\n\n\n\n\nCodex can also answer questions or update the PR. Try commenting \"@codex address that feedback\".\n            \n</details>",
+    "commit_id": "98f8eccab962a547b5762f241a65edb350419fd7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65878#pullrequestreview-4564811979"
+  },
+  {
+    "id": 4564844620,
+    "pr_number": 65878,
+    "author": "cat-ph",
+    "state": "COMMENTED",
+    "submitted_at": "2026-06-24T18:22:05+00:00",
+    "body": "",
+    "commit_id": "98f8eccab962a547b5762f241a65edb350419fd7",
+    "html_url": "https://github.com/PostHog/posthog/pull/65878#pullrequestreview-4564844620"
+  },
+  {
+    "id": 4566072593,
+    "pr_number": 65878,
+    "author": "ablaszkiewicz",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T21:19:07+00:00",
+    "body": "You did a sanity check if it works?",
+    "commit_id": "12e56d0986cf8edbd7e6404055d893b5a269787f",
+    "html_url": "https://github.com/PostHog/posthog/pull/65878#pullrequestreview-4566072593"
+  },
+  {
+    "id": 4564812658,
+    "pr_number": 65877,
+    "author": "gantoine",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T18:16:41+00:00",
+    "body": "",
+    "commit_id": "6b7ceb2a2dc8045c630eaf1197d88b1dc8799504",
+    "html_url": "https://github.com/PostHog/posthog/pull/65877#pullrequestreview-4564812658"
+  },
+  {
+    "id": 4565310852,
+    "pr_number": 65877,
+    "author": "webjunkie",
+    "state": "APPROVED",
+    "submitted_at": "2026-06-24T19:34:59+00:00",
+    "body": "Independently verified on a real PR run (28113767618): the experiments product shards log `No test durations found` and flat-split by count (811/810 equal selected), producing real pytest times of 24:52 vs 12:22 — genuine execution imbalance, not step-wall/overhead noise. The repo-root `.test_durations` is already restored in the product job and contains matching `products/experiments/…` keys (no colliding bare `backend/` keys), so pointing `--durations-path` at it binds correctly. This PR's own run shows the shards balancing (11:19 vs 10:07). Correct diagnosis, minimal fix, helps every multi-shard product on PRs. LGTM.\n\nMinor: the win scales with how uneven a branch's tests are (~6 min off the long pole on heavy branches); the literal '12-13 min each' is branch-dependent, not guaranteed.",
+    "commit_id": "6b7ceb2a2dc8045c630eaf1197d88b1dc8799504",
+    "html_url": "https://github.com/PostHog/posthog/pull/65877#pullrequestreview-4565310852"
+  }
+]
